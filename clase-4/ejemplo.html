@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripción a Taller Tech</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="color"],
+    input[type="range"],
+    input[type="file"] {
+      padding: 3px;
+    }
+
+    .inline {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background: #0077ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #005fcc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Inscripción - Taller Web</h2>
+
+    <form>
+
+      <!-- input clásico -->
+      <label>Nombre completo</label>
+      <input type="text" name="nombre">
+
+      <!-- email -->
+      <label>Email</label>
+      <input type="email" name="email">
+
+      <!-- input poco usado -->
+      <label>Mes de nacimiento</label>
+      <input type="month" name="fecha">
+
+      <!-- input tipo color -->
+      <label>Color favorito (para perfil)</label>
+      <input type="color" name="color">
+
+      <!-- input tipo range -->
+      <label>Nivel de conocimiento (0 a 10)</label>
+      <input type="range" name="nivel" min="0" max="10">
+
+      <!-- input tipo file -->
+      <label>Subir CV</label>
+      <input type="file" name="cv">
+
+      <!-- datalist -->
+      <label>Tecnología de interés</label>
+      <select id="tecnologias">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="React">React</option>
+      </select>
+
+      <datalist id="tecnologias">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+        <option value="React">
+      </datalist>
+
+      <!-- checkbox -->
+      <label>Modalidad</label>
+      <div class="inline">
+        <input type="checkbox" name="online"> Online
+        <input type="checkbox" name="presencial"> Presencial
+      </div>
+
+      <!-- radio -->
+      <label>Turno</label>
+      <div class="inline">
+        <input type="radio" name="turno" value="mañana"> Mañana
+        <input type="radio" name="turno" value="tarde"> Tarde
+      </div>
+
+      <!-- textarea -->
+      <label>Comentarios</label>
+      <textarea rows="3"></textarea>
+
+      <!-- submit -->
+      <button type="reset">Inscribirme</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

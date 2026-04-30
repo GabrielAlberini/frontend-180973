@@ -1,0 +1,28 @@
+Hola, necesito una landing page para el negocio de mi familia. Tenemos una panadería artesanal llamada La Espiga Dorada, atendida por mis padres y mis hermanos desde hace más de 20 años en el barrio.
+
+Queremos una página simple, atractiva y moderna para mostrar quiénes somos y atraer más clientes de la zona.
+
+Lo que nos gustaría incluir:
+Encabezado principal con el nombre del negocio y una frase como: “Pan recién horneado todos los días”.
+Sección de presentación contando brevemente la historia familiar del negocio.
+Sección de productos destacados:
+Facturas
+Tortas personalizadas
+Pan casero
+Sandwiches de miga
+Galería de imágenes de productos (pueden ser imágenes de ejemplo).
+Horarios de atención:
+Lunes a Sábado: 7:00 a 13:00 y 16:30 a 21:00
+Domingo: 8:00 a 13:00
+Ubicación: Av. San Martín 245, centro.
+Botón de WhatsApp para pedidos.
+Formulario de contacto con nombre, teléfono y mensaje.
+Pie de página con redes sociales y texto: “Gracias por apoyar negocios familiares”.
+Estilo deseado:
+Colores cálidos (beige, marrón, dorado).
+Diseño prolijo y familiar.
+Tipografía agradable y fácil de leer.
+Que se vea bien en celular y computadora.
+Objetivo:
+
+Que las personas conozcan el negocio, vean los productos y puedan contactarnos fácilmente para hacer pedidos.
