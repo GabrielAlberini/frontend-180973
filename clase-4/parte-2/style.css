@@ -1,0 +1,27 @@
+/* selector → propiedad → valor */
+/* El titulo principal le voy a cambiar el color de letra a rojo */
+
+/* ✅ selector → El titulo principal → h1*/
+/* ✅ propiedad → color de letra →  color*/
+/* ✅ valor → rojo */
+
+h1 {
+  /*hex → 0-9 a-f*/
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 60px;
+}
+
+h1 {
+  color: blue;
+}
+
+h1 {
+  color: yellowgreen;
+}
+
+p {
+  color: rgb(215, 147, 227);
+}
