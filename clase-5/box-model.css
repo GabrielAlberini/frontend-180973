@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  background-color: yellowgreen;
+  padding: 30px 0 0 0;
+  /* 1° parametro: eje Y */
+  /* 2° parametro: eje X */
+  /* margin: 100px 20px; */
+  /* 1° arriba */
+  /* 2° derecha */
+  /* 3° abajo */
+  /* 4° izquierda */
+  margin: 10px;
+  border: 3px solid red;
+  width: 50%;
+}
+
+input {
+  display: block;
+}
+
+.texto-diferente {
+  background-color: yellow;
+}
+
+#parrafo3 {
+  background-color: aquamarine;
+}
+
+/* 
+h1 → etiqueta
+. → clase
+# → identificador
+*/
+
+/* Selector por anidación */
+html body div p {
+  color: purple;
+  font-weight: bold;
+}
+
+/* Selector multiple */
+
+h4,
+input {
+  padding: 10px;
+  border: 1px solid blue;
+}

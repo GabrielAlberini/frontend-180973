@@ -1,0 +1,58 @@
+/* Propiedades básicas de texto
+color → color del texto
+font-family → tipografía
+font-size → tamaño
+font-weight → grosor (normal, bold, etc.)
+font-style → estilo (italic, normal)
+font-variant → variantes (small-caps, etc.)
+line-height → altura de línea
+text-align → alineación (left, center, right, justify)
+text-transform → mayúsculas/minúsculas
+text-decoration → subrayado, tachado, etc. */
+
+/* Hexadecimal → sistema numérico del 0-9 a-f */
+@font-face {
+  font-family: 'MochaChoco';
+  src: url('./MochaChoco.otf');
+}
+
+h1 {
+  /* color: #00FFFF; */
+  /* font-family: "MochaChoco"; */
+  font-family: Calibri;
+  font-weight: 900;
+  /* font-variant: small-caps; */
+  /* text-transform: uppercase; */
+  text-align: start;
+  text-transform: uppercase;
+  color: white;
+  border-bottom: 2px dotted red;
+  background-color: blue;
+}
+
+p {
+  line-height: 1.6;
+  text-transform: capitalize;
+  /* writing-mode: vertical-rl;
+  text-orientation: mixed;
+  direction: rtl;
+  text-shadow: 2px 2px 4px black;
+  text-decoration: underline wavy red;
+  text-emphasis: filled circle; */
+  color: white;
+  background-color: violet;
+}
+
+/* Fondo */
+body {
+  /* background-color: wheat; */
+  background-image: url("https://www.purina.com/.netlify/images?w=1000&h=1000&fm=avif&q=75&url=https%3A%2F%2Flive.purina.com%2Fsites%2Fdefault%2Ffiles%2F2025-09%2Fbeagle2_red-collar.jpg&cd=f39b5711c26a8d3665d5160ee9cdfb91");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+img {
+  width: 40%;
+  background-color: tomato;
+}
