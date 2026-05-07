@@ -1,0 +1,94 @@
+/* una variables es una referencia a un valor */
+
+/* variable contiene como me llamo → gabriel */
+
+/* color1 → rojo */
+/* tipografia1 → Inter */
+
+/* selector → propiedades → valor */
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter.ttf");
+}
+
+:root {
+  --primary: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --bg700: hsl(0, 0%, 20%);
+  --bg800: hsl(0, 0%, 12%);
+  --bg900: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  color: var(--white);
+}
+
+body {
+  background-color: var(--bg900);
+  min-height: 100vh;
+}
+
+#social-links {
+  background-color: var(--bg800);
+  width: 330px;
+  margin: 150px auto;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 6px 7px 17px -5px rgb(35, 35, 35);
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  width: 80px;
+}
+
+h3 {
+  margin: 20px 0 10px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h4 {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+  color: var(--white);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  background-color: var(--bg700);
+  margin: 10px;
+  display: block;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: var(--white);
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+ul li a:hover {
+  background-color: var(--primary);
+  color: var(--bg800);
+}
+
+footer {
+  text-align: center;
+}
