@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+  --colorPrimario: blue;
+}
+
+/* h1 {
+  color: var(--colorPrimario);
+  margin-bottom: 20px;
+} */
+
+/* selector - propiedad - valor */
+
+h1 {
+  color: black;
+}
+
+.product {
+  background-color: yellowgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+.product img {
+  border-radius: 50%;
+}
+
+.product h2 {
+  font-size: 30px;
+}
+
+.product h3 {
+  /* border: 2px solid red; */
+  width: 100px;
+  margin: 0 auto 10px auto;
+  background-color: rgba(39, 130, 55, 0.501);
+  padding: 5px;
+  box-shadow: 2px 2px 5px 2px rgb(219, 219, 219);
+  border-radius: 20px;
+}
+
+.product button {
+  width: 100%;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: yellow;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(91, 91, 0);
+  cursor: pointer;
+}
+
+/* Flexbox son siempre los contenedores */
+/* Un contendor flex puede reubicar a los elementos hijos */
+
+section {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.btn-shop img {
+  width: 20px;
+  border-radius: 0;
+}
+
+.btn-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
