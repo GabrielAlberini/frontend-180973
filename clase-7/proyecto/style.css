@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+:root {
+  /* Primary */
+  --color1: hsl(0, 100%, 67%);
+  /* Light red */
+  --color2: hsl(39, 100%, 56%);
+  /* Orangey yellow */
+  --color3: hsl(166, 100%, 37%);
+  /* Green teal */
+  --color4: hsl(234, 85%, 45%);
+  /* Cobalt blue */
+
+  /* Gradients */
+  --gradient-bg-1: hsl(252, 100%, 67%);
+  /* Light slate blue */
+  --gradient-bg-2: hsl(241, 81%, 54%);
+  /* Light royal blue */
+
+  --gradient-circle-1: hsla(256, 72%, 46%, 1);
+  /* Violet blue */
+  --gradient-circle-2: hsla(241, 72%, 46%, 0);
+  /* Persian blue */
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+}
+
+#card {
+  background-color: var(--white);
+  width: 500px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.result,
+.summary {
+  padding: 10px;
+}
+
+.result {
+  width: 50%;
+  background-color: yellowgreen;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to bottom, var(--gradient-bg-1), var(--gradient-bg-2));
+  border-radius: 20px;
+}
+
+.result h3:first-of-type {
+  color: var(--light-lavender);
+}
+
+.score {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, var(--gradient-circle-1), var(--gradient-circle-2));
+  color: var(--white);
+}
+
+.quantity {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.summary {
+  width: 50%;
+  background-color: aqua;
+  background-color: var(--white);
+}
