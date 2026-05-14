@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+
+  /* Neutral */
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+
+  /*Fonts*/
+  --title: "Fraunces";
+  --text-body: "Montserrat";
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--black);
+}
+
+h2,
+h3 {
+  font-family: var(--title);
+}
+
+p,
+button {
+  font-family: var(--text-body);
+}
