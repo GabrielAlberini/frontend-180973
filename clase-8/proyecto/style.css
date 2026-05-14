@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+:root {
+  /* Primary */
+  --color1: hsl(0, 100%, 67%);
+  /* Light red */
+  --color2: hsl(39, 100%, 56%);
+  /* Orangey yellow */
+  --color3: hsl(166, 100%, 37%);
+  /* Green teal */
+  --color4: hsl(234, 85%, 45%);
+  /* Cobalt blue */
+
+  /* Gradients */
+  --gradient-bg-1: hsl(252, 100%, 67%);
+  /* Light slate blue */
+  --gradient-bg-2: hsl(241, 81%, 54%);
+  /* Light royal blue */
+
+  --gradient-circle-1: hsla(256, 72%, 46%, 1);
+  /* Violet blue */
+  --gradient-circle-2: hsla(241, 72%, 46%, 0);
+  /* Persian blue */
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+
+  --gray: rgb(130, 130, 130);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+}
+
+#card {
+  background-color: var(--white);
+  width: 500px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.result,
+.summary {
+  padding: 25px;
+}
+
+.result {
+  width: 50%;
+  background-color: yellowgreen;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+  background-image: linear-gradient(to bottom, var(--gradient-bg-1), var(--gradient-bg-2));
+  border-radius: 20px;
+}
+
+.result h3:first-of-type {
+  color: var(--light-lavender);
+  margin-bottom: 20px;
+}
+
+.score {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, var(--gradient-circle-1), var(--gradient-circle-2));
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.quantity {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.total {
+  color: var(--white);
+}
+
+.summary {
+  width: 50%;
+  background-color: aqua;
+  background-color: var(--white);
+}
+
+.result h3:last-of-type {
+  font-size: 25px;
+  color: var(--white);
+}
+
+.result p:last-of-type {
+  color: var(--light-lavender);
+  font-size: 14px;
+}
+
+/* Summary styles */
+
+.summary {
+  border-radius: 20px;
+}
+
+/* li:last-of-type {
+  margin-bottom: 0;
+} */
+
+/* gap → separar los elementos hijos de un contenedor flexible */
+
+.summary ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+ul li {
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li div {
+  display: flex;
+  gap: 5px;
+}
+
+.summary h3 {
+  margin-bottom: 10px;
+}
+
+.summary h3,
+.summary strong {
+  color: var(--dark-gray-blue);
+}
+
+.summary p {
+  color: var(--gray);
+}
+
+ul li:nth-child(1) {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+ul li:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+ul li:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+ul li:nth-child(4) {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+ul li:nth-child(1) div p {
+  color: var(--color1);
+}
+
+ul li:nth-child(2) div p {
+  color: var(--color2);
+}
+
+ul li:nth-child(3) div p {
+  color: var(--color3);
+}
+
+ul li:nth-child(4) div p {
+  color: var(--color4);
+}
+
+.summary button {
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: scale .3s;
+}
+
+.summary li:hover {
+  scale: 1.05;
+}
+
+.summary button:hover {
+  background-image: linear-gradient(to bottom, var(--gradient-bg-1), var(--gradient-bg-2));
+  scale: 1.05;
+}
