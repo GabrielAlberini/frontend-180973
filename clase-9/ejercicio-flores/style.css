@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+article {
+  /* background-color: yellowgreen; */
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.invitation {
+  /* background-color: violet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.invitation img {
+  width: 100%;
+}
+
+.ilustration {
+  /* background-color: wheat; */
+  width: 50%;
+}
+
+.ilustration .cont-flowers {
+  position: relative;
+  animation: aparecer 2s;
+  /* background-color: aquamarine; */
+  z-index: 0;
+}
+
+.cont-flowers img:first-of-type {
+  position: relative;
+  /* background-color: brown; */
+  bottom: 55px;
+}
+
+.cup {
+  position: relative;
+  z-index: 100;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    top: 130px;
+    left: -100px;
+    scale: 0.1;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+    scale: 1;
+    left: 0;
+  }
+}

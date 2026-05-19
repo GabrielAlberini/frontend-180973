@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.caja,
+.caja2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+section {
+  position: relative;
+  background-color: tomato;
+  height: 300px;
+}
+
+.caja {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  left: 50px;
+  bottom: 30px;
+  background-color: yellowgreen;
+}
+
+.caja2 {
+  position: static;
+  background-color: blueviolet;
+}

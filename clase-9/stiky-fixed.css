@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: yellowgreen;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.header2 {
+  background-color: tomato;
+  top: 70px;
+}

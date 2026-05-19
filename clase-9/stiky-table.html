@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabla Sticky</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .table-container {
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead th {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      color: white;
+      padding: 12px;
+      text-align: left;
+      z-index: 10;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Usuarios registrados</h2>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Rol</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Juan Pérez</td>
+          <td>juan@mail.com</td>
+          <td>Admin</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ana Gómez</td>
+          <td>ana@mail.com</td>
+          <td>Usuario</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Carlos Díaz</td>
+          <td>carlos@mail.com</td>
+          <td>Editor</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Laura López</td>
+          <td>laura@mail.com</td>
+          <td>Usuario</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Pedro Ruiz</td>
+          <td>pedro@mail.com</td>
+          <td>Admin</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Sofía Torres</td>
+          <td>sofia@mail.com</td>
+          <td>Usuario</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Martín Silva</td>
+          <td>martin@mail.com</td>
+          <td>Editor</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Lucía Fernández</td>
+          <td>lucia@mail.com</td>
+          <td>Usuario</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>

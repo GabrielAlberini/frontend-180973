@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Display block → ocupa el 100% del ancho disponible del elemente padre / madre */
+
+.caja,
+.caja2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: yellowgreen;
+}
+
+.caja2 {
+  background-color: blueviolet;
+}
+
+/* Position: sirve para controlar cómo se posiciona un elemento en la página */
+
+/* La caja es una caja normal, dispuesta según el flujo habitual. Las propiedades 'top', 'right', 'bottom' y 'left' no se aplican. */
+.caja {
+  position: static;
+}
+
+/* La propiedad CSS `position` define cómo se posiciona un elemento en un documento. Las propiedades `top`, `right`, `bottom` y `left` determinan la ubicación final de los elementos posicionados. */
+.caja {
+  position: relative;
+  top: 130px;
+  left: 50px;
+  /* margin-top: 10px; */
+  z-index: -1;
+}

@@ -16,8 +16,8 @@
   --white: hsl(0, 0%, 100%);
 
   /*Fonts*/
-  --title: "Fraunces";
-  --text-body: "Montserrat";
+  --title: "Fraunces", sans-serif;
+  --text-body: "Montserrat", sans-serif;
 }
 
 body {
