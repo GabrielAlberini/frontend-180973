@@ -1,0 +1,9 @@
+- Comprender qué es JavaScript y cuál es su función en el desarrollo web.
+- Diferenciar HTML, CSS y JavaScript.
+- Crear un archivo JavaScript e integrarlo a una página web.
+- Utilizar la consola del navegador para probar código.
+- Declarar variables usando let y const.
+- Comprender y utilizar distintos tipos de datos.
+- Aplicar operadores aritméticos, lógicos y de comparación.
+- Mostrar información en pantalla y solicitar datos al usuario.
+- Resolver pequeños ejercicios de lógica básica.
