@@ -127,3 +127,4 @@ const gustosDeHeladosFav = ["Kinoto al whisky", "Banana con dulce de leche", "Co
 const conversion = gustosDeHeladosFav.map((helado, index) => ({ id: index + 1, nombre: helado, heladeria: "Grido" }))
 console.log(gustosDeHeladosFav)
 console.log(conversion)
+
