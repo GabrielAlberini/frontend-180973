@@ -1,0 +1,17 @@
+import { Tecnologia } from "./Tecnologia"
+import { Titulo } from "./Titulo"
+
+const ListaTecnologias = ({ tecnologias }) => {
+  return (
+    <>
+      <Titulo contenido={"Tecnologias favoritas"} color={"yellowgreen"} />
+      <ul>
+        {
+          tecnologias.map((tecnologia) => <Tecnologia nombre={tecnologia} />)
+        }
+      </ul>
+    </>
+  )
+}
+
+export { ListaTecnologias }
