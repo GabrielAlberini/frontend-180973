@@ -1,19 +1,21 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { Biografia } from "../components/Biografia.jsx"
 import { ListaHobbies } from "../components/ListaHobbies.jsx"
 import { ListaTecnologias } from "../components/ListaTecnologias.jsx"
 import { Tarjeta } from "../components/Tarjeta.jsx"
 import { persona } from "../data/persona.js"
 import { Titulo } from "../components/Titulo.jsx"
+import { AuthContext } from "../context/AuthContext.jsx"
 
 const { nombre, edad, ciudad, descripcion, foto, hobbies, tecnologias } = persona
 
 const Inicio = () => {
   const [hobby, setHobby] = useState("")
   const [listHobbies, setListHobbies] = useState(hobbies)
-  const [user, setUser] = useState(false)
   const [updating, setUpdating] = useState(false)
   const [hobbyToUpdate, setHobbyToUpdate] = useState(null)
+
+  const { user } = useContext(AuthContext)
 
   const dataBio = { nombre, edad, ciudad, descripcion, foto }
 
@@ -58,7 +60,7 @@ const Inicio = () => {
     <>
       <Tarjeta>
         <Biografia data={dataBio} />
-        <Titulo contenido={"Hobbies"} color={"green"} />
+        <Titulo contenido={"Mi lista de hobbies"} color={"green"} />
         {
           user && <form onSubmit={handleSubmit}>
             <input

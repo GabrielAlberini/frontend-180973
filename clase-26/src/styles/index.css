@@ -171,3 +171,8 @@ li .btn-update {
 .contacto button:hover {
   background-color: #2366d1;
 }
+
+/* dark theme */
+.dark-theme {
+  background-color: #0f2c5b;
+}

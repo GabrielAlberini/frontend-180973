@@ -2,7 +2,8 @@ const Hobby = ({ name, user, deleteHobby, updateHobby }) => {
   return (
     <li>
       {name}
-      {user &&
+      {
+        user &&
         <span>
           <button className="btn-delete" onClick={() => deleteHobby(name)}>❌</button>
           <button className="btn-update" onClick={() => updateHobby(name)}>🔃</button>

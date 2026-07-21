@@ -2,6 +2,8 @@ const persona = {
   nombre: "Juan Pérez",
   edad: 24,
   ciudad: "Santa Fe",
+  email: "gabialberini733@gmail.com",
+  password: "pepe123",
   descripcion:
     "Soy estudiante de programación y me gusta aprender nuevas tecnologías.",
 
